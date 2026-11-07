@@ -45,6 +45,7 @@ class PokerBot:
     RAISE = 0.72
     BLUFF = 0.0          # bluff frequency when checked to
     MARGIN = 0.02        # extra equity required to call
+    VALUE_SIZE = 0.75    # fraction of the pot for a tier 2-3 value bet
     ITERATIONS = 220
     COMMIT = True        # stack off at low SPR
     SHOVE_CLOSE = True   # round a raise to all-in when it is close
@@ -354,7 +355,7 @@ class PokerBot:
             if paired or connected:
                 return 0.75
             return 0.66
-        return 0.75
+        return self.VALUE_SIZE
 
     def _size(self, game_state, fraction):
         me = self.player_id

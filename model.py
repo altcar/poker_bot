@@ -1,23 +1,23 @@
-"""Plan B - preflop ranges plus Monte-Carlo equity.
+"""Plan C - B plus a live opponent model.
 
-The workhorse: a 25 bb heads-up opening range, equity against random hands
-postflop, pot-odds calls and a single value size.
+Counters per team (VPIP/PFR/aggression/big-bet frequency) drive the range
+filter used by the equity calculation and switch the strategy archetype.
 """
 
 from policy import PokerBot
 
 
 class Model(PokerBot):
-    TIER = 2
+    TIER = 3
 
-    OPEN = 0.55
-    THREE_BET = 0.12
-    DEFEND = 0.85
-    FOUR_BET = 0.045
-    CALL_FOUR = 0.10
+    OPEN = 0.58
+    THREE_BET = 0.13
+    DEFEND = 0.88
+    FOUR_BET = 0.05
+    CALL_FOUR = 0.11
 
-    VALUE = 0.64
-    RAISE = 0.64
+    VALUE = 0.63
+    RAISE = 0.63
     MARGIN = 0.0
-    BLUFF = 0.06
-    ITERATIONS = 200
+    BLUFF = 0.10
+    ITERATIONS = 240
