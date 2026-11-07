@@ -1,0 +1,46 @@
+﻿
+==== model_a ====
+opponents                       your bb/100  verdict   hands faults  slowest
+fold                         +45.0 ± 34.6      ahead      20      0    0.00s
+call                        +102.5 ± 257.4   unclear      20      0    0.00s
+random                       +19.7 ± 116.2   unclear      20      0    0.00s
+shove                        +22.0 ± 515.3   unclear      20      0    0.00s
+tight                       +167.5 ± 285.1   unclear      20      0    0.00s
+equity                       -58.2 ± 210.4   unclear      20      0    0.00s
+
+==== model_b ====
+opponents                       your bb/100  verdict   hands faults  slowest
+fold                         +65.0 ± 22.6      ahead      20      0    0.01s
+call                        +302.0 ± 295.1     ahead      20      0    0.01s
+random                      +253.0 ± 439.8   unclear      20      0    0.01s
+shove                       +300.0 ± 726.7   unclear      20      0    0.00s
+tight                       +187.5 ± 279.0   unclear      20      0    0.01s
+equity                        -0.5 ± 240.0   unclear      20      0    0.01s
+
+==== model_c ====
+opponents                       your bb/100  verdict   hands faults  slowest
+fold                         +65.0 ± 22.6      ahead      20      0    0.01s
+call                        +141.2 ± 302.7   unclear      20      0    0.01s
+random                      +104.5 ± 606.0   unclear      20      0    0.01s
+shove                       +164.0 ± 695.3   unclear      20      0    0.00s
+tight                        +67.5 ± 55.9      ahead      20      0    0.01s
+equity                       -63.3 ± 157.7   unclear      20      0    0.01s
+
+==== model_d ====
+opponents                       your bb/100  verdict   hands faults  slowest
+fold                         +75.0 ± 0.0       ahead      20      0    0.01s
+call                        +108.7 ± 313.9   unclear      20      0    0.02s
+random                      -298.0 ± 663.2   unclear      20      0    0.02s
+shove                       +158.0 ± 819.2   unclear      20      0    0.00s
+tight                        +88.5 ± 62.3      ahead      20      0    0.01s
+equity                        -8.8 ± 227.5   unclear      20      0    0.03s
+
+==== model_e ====
+opponents                       your bb/100  verdict   hands faults  slowest
+fold                         +75.0 ± 0.0       ahead      20      0    0.01s
+call                        +178.5 ± 397.6   unclear      20      0    0.04s
+random                      -161.0 ± 722.3   unclear      20      0    0.02s
+shove                        +44.0 ± 781.2   unclear      20      0    0.00s
+tight                        +88.5 ± 62.3      ahead      20      0    0.01s
+equity                       +10.0 ± 246.2   unclear      20      0    0.03s
+
