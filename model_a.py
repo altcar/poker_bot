@@ -10,14 +10,15 @@ from policy import PokerBot
 class Model(PokerBot):
     TIER = 1
 
-    OPEN = 0.34
+    OPEN = 0.80
     THREE_BET = 0.09
-    DEFEND = 0.32
+    DEFEND = 1.0
     FOUR_BET = 0.03
-    CALL_FOUR = 0.07
+    CALL_FOUR = 1.0
 
-    VALUE = 0.62
-    RAISE = 0.78
-    MARGIN = 0.05
+    VALUE = 0.58
+    RAISE = 0.58
+    MARGIN = 0.0
     BLUFF = 0.0
+    VALUE_SIZE = 1.25
     ITERATIONS = 0

@@ -50,6 +50,7 @@ class PokerBot:
     COMMIT = True        # stack off at low SPR
     SHOVE_CLOSE = True   # round a raise to all-in when it is close
     USE_MDF = True       # defend wider against small bets
+    USE_RANGE_FILTER = True  # narrow the MC with the opponent's line
 
     def __init__(self):
         self.hole = []
@@ -152,6 +153,8 @@ class PokerBot:
     def _opponent_filter(self, game_state):
         """A hole-card filter for the MC, from the opponent's preflop line."""
         if self.TIER < 3 or game_state.num_players > 2:
+            return None
+        if not self.USE_RANGE_FILTER:
             return None
         if self._opp_three_bet:
             limit = 0.14
