@@ -1,5 +1,7 @@
 # Poker bot hackathon
 
+https://poker-arena-site.vercel.app/#/tournament
+
 Write a bot that plays no-limit Texas hold'em. Your bot is a `Model` in
 `model.py`. It is pickled and submitted, and the organisers' engine plays it
 against other teams' bots.
